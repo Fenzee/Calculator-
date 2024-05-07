@@ -8,43 +8,48 @@
 </head>
 
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="fanzz.html">Calculator</a>
+  <div class="navbar">
+  <nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Calculator</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About Fanzz</a> <br>
-    <script src="script.js"></script>
+  </div>
+  <div class="container">
+      <script src="script.js"></script>
+  
+      <input type="text" id="display" readonly>
+  
+      <br><br>
+      <button class="button" onclick="updateDisplay(7)">7</button>
+      <button class="button" onclick="updateDisplay(8)">8</button>
+      <button class="button" onclick="updateDisplay(9)">9</button>
+      <button class="button" onclick="updateDisplay('+')">+</button>
+      <br>
+      
+      
+      <button class="button" onclick="updateDisplay(4)">4</button>
+      <button class="button" onclick="updateDisplay(5)">5</button>
+      <button class="button" onclick="updateDisplay(6)">6</button>
+      <button class="button" onclick="updateDisplay('-')">-</button>
+  
+      <br>
+  
+      <button class="button" onclick="updateDisplay(1)">1</button>
+      <button class="button" onclick="updateDisplay(2)">2</button>
+      <button class="button" onclick="updateDisplay(3)">3</button>
+      <button class="button" onclick="updateDisplay('*')">x</button>
+  
+      <br>
+  
+      <button class="button" onclick="updateDisplay('.')">.</button>
+      <button class="button" onclick="updateDisplay(0)">0</button>
+      <button class="button" onclick="updateDisplay('/')">/</button>
+      <button class="button" onclick="calculate()">=</button>
+      <button class="button1" onclick="clearDisplay()">clear</button>
+  
+      <br><br>
+  </div>
+    
 
-    <input type="text" id="display" readonly>
-
-    <br><br>
-
-    <button class="button" onclick="updateDisplay(7)">7</button>
-    <button class="button" onclick="updateDisplay(8)">8</button>
-    <button class="button" onclick="updateDisplay(9)">9</button>
-    <button class="button" onclick="updateDisplay('+')">+</button>
-
-    <br>
-
-    <button class="button" onclick="updateDisplay(4)">4</button>
-    <button class="button" onclick="updateDisplay(5)">5</button>
-    <button class="button" onclick="updateDisplay(6)">6</button>
-    <button class="button" onclick="updateDisplay('-')">-</button>
-
-    <br>
-
-    <button class="button" onclick="updateDisplay(1)">1</button>
-    <button class="button" onclick="updateDisplay(2)">2</button>
-    <button class="button" onclick="updateDisplay(3)">3</button>
-    <button class="button" onclick="updateDisplay('*')">x</button>
-
-    <br>
-
-    <button class="button" onclick="updateDisplay('.')">.</button>
-    <button class="button" onclick="updateDisplay(0)">0</button>
-    <button class="button" onclick="calculate()">=</button>
-    <button class="button" onclick="updateDisplay('/')">/</button>
-    <button class="button1" onclick="clearDisplay()">clear</button>
-
-    <br><br>
 
 
 </body>
