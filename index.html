@@ -13,10 +13,14 @@
   <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Calculator</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About Fanzz</a> <br>
   </div>
-  <div class="container">
-      <script src="script.js"></script>
-  
-      <input type="text" id="display" readonly>
+  <div class="container-cal">
+    <script src="script.js"></script>
+    <div class="calculator">
+      <!-- <h1>Calculator</h1>
+      <h2>Made by Fanzz</h2>
+      <h3>Version 1.0.0</h3>
+      <br> -->
+      <input type="text" id="display" readonly placeholder="Masukan Angka !">
   
       <br><br>
       <button class="button" onclick="updateDisplay(7)">7</button>
@@ -43,10 +47,12 @@
       <button class="button" onclick="updateDisplay('.')">.</button>
       <button class="button" onclick="updateDisplay(0)">0</button>
       <button class="button" onclick="updateDisplay('/')">/</button>
-      <button class="button" onclick="calculate()">=</button>
-      <button class="button1" onclick="clearDisplay()">clear</button>
+      <button class="button" onclick="clearDisplay()">c</button> <br>
+      <button class="button1" onclick="calculate()">=</button>
   
       <br><br>
+    </div>
+  
   </div>
     
 
